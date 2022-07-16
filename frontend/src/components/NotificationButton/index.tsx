@@ -14,5 +14,5 @@ function NotificationButton() {
    
    }
    
-   export default NotificationButton
+   export default NotificationButton;
    
