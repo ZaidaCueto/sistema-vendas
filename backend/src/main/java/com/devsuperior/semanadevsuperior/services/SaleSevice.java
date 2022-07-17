@@ -15,7 +15,7 @@ import com.devsuperior.semanadevsuperior.repositories.SaleRepository;
 
 
 
-//Componente responsável por executar funções no Banco de Dados
+
 @Service
 public class SaleSevice {
 	

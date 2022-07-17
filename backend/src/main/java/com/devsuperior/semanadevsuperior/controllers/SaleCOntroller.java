@@ -1,6 +1,8 @@
 package com.devsuperior.semanadevsuperior.controllers;
 
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.semanadevsuperior.entities.Sale;
 import com.devsuperior.semanadevsuperior.services.SaleSevice;
+import com.devsuperior.semanadevsuperior.services.SmsService;
+
+
 
 //Componente responsável por criar o endpoint entre backend e frontend
 @RestController
@@ -20,8 +25,8 @@ public class SaleCOntroller {
 	
 	@Autowired
 	private SaleSevice service;
-//	@Autowired
-//	private SmsService smsService;
+	@Autowired
+	private SmsService smsService;
 	
 	@GetMapping
 	public Page<Sale> findSales(
